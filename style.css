@@ -119,3 +119,17 @@
 .some_space {
 	margin-top: 50px
 }
+
+.marker {
+	display: block;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	padding: 0;
+}
+
+#map {
+	width: 100%;
+	height: 350px;
+	margin-top: 50px;
+}
