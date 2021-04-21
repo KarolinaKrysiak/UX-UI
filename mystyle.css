@@ -22,7 +22,7 @@
 	padding: 20px;
 	box-shadow: 0 0 0 12px #ccc;
 	justify-content: center;
-	margin-top: 120px;
+	margin-top: 135px;
 }
 
 .month-week {
@@ -34,7 +34,7 @@
 .month-week span {
 	font-size: 13px;
 	margin-left: 5px;
-	background-color: #c333ff;
+	background-color: #45d6e2;
 	color: #fff;
 	padding: 5px 15px;
 	border-radius: 50px;
@@ -72,4 +72,10 @@
 
 .next-month {
 	color: #ccc !important;
+}
+
+.back {
+	position: absolute;
+	left: 0;
+	top: 100px;
 }

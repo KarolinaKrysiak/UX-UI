@@ -37,6 +37,10 @@
 
 }
 
+.back {
+	margin-left: 15px;
+}
+
 
 
 .all_elements {
@@ -101,4 +105,3 @@
 .avatar {
 	height: 200px;
 }
-
