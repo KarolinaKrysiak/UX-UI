@@ -142,3 +142,32 @@
 	border-radius: 50%;
 	cursor: pointer;
 }
+
+/* cleaning duties page */
+
+.cleaning_duties {
+	width: 350px;
+	height: 80px;
+	background: #d9d9d9;
+	margin: 20px auto;
+	color: black;
+	display: flex;
+	justify-content: space-between;
+	font-size: 20px;
+	font-weight: bold;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.text {
+	text-decoration: underline black;
+	margin: auto 30px;
+}
+
+.arrow {
+	text-decoration: none;
+	height: 40px;
+}
+
+.arrow_margin {
+	margin: auto 30px;
+}
