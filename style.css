@@ -104,4 +104,18 @@
 
 .avatar {
 	height: 200px;
+	display: block;
+	margin: 30px auto;
+}
+
+.intro {
+	text-align: center;
+}
+
+.address {
+	margin: 15px 50px;
+}
+
+.some_space {
+	margin-top: 50px
 }
