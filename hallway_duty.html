@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ravnsbjerg app</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page__body">
+
+	<header class="navigation">
+		<nav>
+			<div class="menuitems">
+
+				<div id="result" class="weather"></div>
+
+
+				<div class="menuitems_right">
+
+					<a href="#">
+						<img src="images/envelope.png" alt="notifications icon" class="menu_icon envelope">
+					</a>
+
+					<a href="#">
+						<img src="images/girl.png" alt="profile picture" class="menu_icon">
+					</a>
+				</div>
+
+
+			</div>
+		</nav>
+	</header>
+
+	<main>
+
+		<div class="all_elements">
+			<a href="index.html" class="back">&#5130; back</a>
+
+			<h1 class="header">Cleaning duties</h1>
+
+			<h1>Progress bar for counting checkboxes</h1>
+			<form>
+				<p>
+					<input type="checkbox" name="box1" />
+					<input type="checkbox" name="box2" />
+					<input type="checkbox" name="box3" />
+				</p>
+			</form>
+			<div class="progressbar-container">
+				<div class="progressbar-bar"></div>
+				<div class="progressbar-label"></div>
+			</div>
+			<div class="ready"></div>
+
+		</div>
+
+
+	</main>
+
+	<script>
+		$(document).ready(function() {
+
+			// get box count
+			var count = 0;
+			var checked = 0;
+
+			function countBoxes() {
+				count = $("input[type='checkbox']").length;
+				console.log(count);
+			}
+
+			countBoxes();
+			$(":checkbox").click(countBoxes);
+
+			// count checks
+
+			function countChecked() {
+				checked = $("input:checked").length;
+
+				var percentage = parseInt(((checked / count) * 100), 10);
+				$(".progressbar-bar").progressbar({
+					value: percentage
+				});
+				$(".progressbar-label").text(percentage + "%");
+			}
+
+			countChecked();
+			$(":checkbox").click(countChecked);
+		});
+	</script>
+
+
+</body></html>
