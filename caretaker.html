@@ -77,10 +77,33 @@
 			.setView([56.119525, 10.149886], 20)
 			.addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'));
 
-		var marker = new mapboxgl.Marker({
-				color: "#45d6e2",
-			}).setLngLat([56.119525, 10.149886])
-			.addTo(map);
+		var geojson = {
+			type: 'FeatureCollection',
+			features: [{
+				type: 'Feature',
+				geometry: {
+					type: 'Point',
+					coordinates: [56.119525, 10.149886]
+				},
+				properties: {
+					title: 'Mapbox',
+					description: 'The caretaker'
+				}
+			}, ]
+		};
+
+		// add markers to map
+		geojson.features.forEach(function(marker) {
+
+			// create a HTML element for each feature
+			var el = document.createElement('div');
+			el.className = 'marker';
+
+			// make a marker for each feature and add to the map
+			new mapboxgl.Marker(el)
+				.setLngLat(marker.geometry.coordinates)
+				.addTo(map);
+		});
 	</script>
 
 
