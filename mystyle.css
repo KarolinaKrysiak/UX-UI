@@ -1,0 +1,74 @@
+/* Basic CSS reset */
+*,
+:after,
+:before {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+.page__body {
+	font-family: Arial, Helvetica, sans-serif;
+	max-width: 800px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+}
+
+.calender {
+	padding: 20px;
+	box-shadow: 0 0 0 12px #ccc;
+	justify-content: center;
+}
+
+.month-week {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.month-week span {
+	font-size: 13px;
+	margin-left: 5px;
+	background-color: #c333ff;
+	color: #fff;
+	padding: 5px 15px;
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+.month-week:last-child {
+	background-color: transparent;
+	color: #c333ff;
+	border: 1px solid #c333ff;
+	display: flex;
+}
+
+.weeks {
+	padding: 20px;
+	justify-content: center;
+	align-content: center;
+}
+
+.weeks span {
+	padding: 20px;
+	justify-content: center;
+	align-content: center;
+}
+
+.days {
+	display: flex;
+}
+
+.days span {
+	width: 14.30%;
+	text-align: center;
+	padding: 30px 20px;
+}
+
+.next-month {
+	color: #ccc !important;
+}
