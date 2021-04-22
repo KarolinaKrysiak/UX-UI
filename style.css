@@ -39,9 +39,19 @@
 
 .back {
 	margin-left: 15px;
+	text-decoration: underline black;
+	color: black;
 }
 
-
+.back_style {
+	width: 100px;
+	height: 30px;
+	border-radius: 100px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	text-align: center;
+	padding-top: 5px;
+	margin-left: 15px;
+}
 
 .all_elements {
 	margin-top: 100px;
