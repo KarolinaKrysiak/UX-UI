@@ -174,34 +174,44 @@
 
 /* hallway duty */
 
-.tasks {
-	background-color: #F6F8F8;
-	padding: 10px;
-	border-radius: 5px;
-	margin-top: 10px;
+.chart_box {
+	background-color: #d9d9d9;
+	width: 350px;
+	height: 350px;
+	margin: auto;
+	margin-bottom: 40px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.tasks span {
-	font-weight: bold;
+.checkbox {
+	margin: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	min-width: 20px;
+	height: 20px;
 }
 
-.tasks input {
-	display: block;
-	margin: 0 auto;
-	margin-top: 10px;
-}
-
-.tasks a {
-	color: #000;
-	text-decoration: none;
-	border: none;
-}
-
-.tasks a:hover {
-	border-bottom: dashed 1px #0088cc;
-}
-
-.tasks label {
-	display: block;
+.tips {
+	color: white;
+	background-color: #45d6e2;
+	width: 100px;
+	height: 30px;
+	border-radius: 100px;
 	text-align: center;
+	text-decoration: underline white;
+	font-weight: bold;
+	margin: 10px auto 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.label {
+	margin: 15px;
+}
+
+.box {
+	width: 350px;
+	min-height: 70px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: auto;
+	display: flex;
+	align-items: center;
 }

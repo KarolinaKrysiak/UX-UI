@@ -40,56 +40,84 @@
 
 			<h1 class="header">Cleaning duties</h1>
 
-			<h1>Progress bar for counting checkboxes</h1>
-			<form>
-				<p>
-					<input type="checkbox" name="box1" />
-					<input type="checkbox" name="box2" />
-					<input type="checkbox" name="box3" />
-				</p>
-			</form>
-			<div class="progressbar-container">
-				<div class="progressbar-bar"></div>
-				<div class="progressbar-label"></div>
+			<div class="chart_box"></div>
+
+			<h2 class="header">Check list</h2>
+
+			<div class="box">
+
+				<input type="checkbox" id="checkbox1" class="checkbox" name="task">
+				<label for="checkbox1" class="label">Vacuum and wash the floor in the corridors</label>
+
 			</div>
-			<div class="ready"></div>
+
+			<a href="#">
+				<div class="tips">Tips</div>
+			</a>
+
+			<div class="box">
+
+				<input type="checkbox" id="checkbox2" class="checkbox" name="task">
+				<label for="checkbox2" class="label">Vacuum and wash the floor and the stairs in the staircase</label>
+
+			</div>
+
+			<a href="#">
+				<div class="tips">Tips</div>
+			</a>
+
+			<div class="box">
+
+				<input type="checkbox" id="checkbox3" class="checkbox" name="task">
+				<label for="checkbox3" class="label">Wipe off stains on doors and walls with a moist cloth</label>
+
+			</div>
+
+			<a href="#">
+				<div class="tips">Tips</div>
+			</a>
+
+			<div class="box">
+
+				<input type="checkbox" id="checkbox4" class="checkbox" name="task">
+				<label for="checkbox4" class="label">Shake or vacuum the mat by the entrace door</label>
+
+			</div>
+
+			<a href="#">
+				<div class="tips">Tips</div>
+			</a>
+
+			<div class="box">
+
+				<input type="checkbox" id="checkbox5" class="checkbox" name="task">
+				<label for="checkbox5" class="label">Throw old newspapers, advertising folders, glass, bottles in the paper and glass containers</label>
+
+			</div>
+
+			<a href="#">
+				<div class="tips">Tips</div>
+			</a>
+
+			<div class="box">
+
+				<input type="checkbox" id="checkbox6" class="checkbox" name="task">
+				<label for="checkbox6" class="label">Bicycles, mopeds, scooters may not be in common areas</label>
+
+			</div>
+
+			<a href="#">
+				<div class="tips">Tips</div>
+			</a>
+
+
+
+
 
 		</div>
 
 
 	</main>
-
-	<script>
-		$(document).ready(function() {
-
-			// get box count
-			var count = 0;
-			var checked = 0;
-
-			function countBoxes() {
-				count = $("input[type='checkbox']").length;
-				console.log(count);
-			}
-
-			countBoxes();
-			$(":checkbox").click(countBoxes);
-
-			// count checks
-
-			function countChecked() {
-				checked = $("input:checked").length;
-
-				var percentage = parseInt(((checked / count) * 100), 10);
-				$(".progressbar-bar").progressbar({
-					value: percentage
-				});
-				$(".progressbar-label").text(percentage + "%");
-			}
-
-			countChecked();
-			$(":checkbox").click(countChecked);
-		});
-	</script>
 
 
 </body></html>
