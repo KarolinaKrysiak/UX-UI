@@ -264,3 +264,25 @@
 	margin: auto;
 	display: block;
 }
+
+/*guide elements*/
+
+.margin {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.blue_box {
+	width: 110px;
+	height: 20px;
+	background-color: #45d6e2;
+}
+
+.paragraph {
+	display: flex;
+	margin-bottom: 5px
+}
+
+.dot {
+	margin-right: 15px;
+}
