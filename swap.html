@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ravnsbjerg app</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page__body">
+
+	<header class="navigation">
+		<nav>
+			<div class="menuitems">
+
+				<div id="result" class="weather"></div>
+
+
+				<div class="menuitems_right">
+
+					<a href="#">
+						<img src="images/envelope.png" alt="notifications icon" class="menu_icon envelope">
+					</a>
+
+					<a href="#">
+						<img src="images/girl.png" alt="profile picture" class="menu_icon">
+					</a>
+				</div>
+
+
+			</div>
+		</nav>
+	</header>
+
+	<main>
+
+		<div class="all_elements">
+
+			<a href="index.html" class="back">&#5130; back</a>
+
+			<h1 class="header">Swapping duties</h1>
+
+			<h3 class="header_form">Duty type</h3>
+
+			<form class="form">
+				<div class="box">
+					<input class="checkbox" type="radio" id="duty1" name="duty type" value="kitchen duty">
+					<label class="label" for="duty1">Kitchen duty</label>
+				</div>
+
+				<div class="box">
+					<input class="checkbox" type="radio" id="duty2" name="duty type" value="hallway duty">
+					<label class="label" for="duty2">Hallway duty</label>
+				</div>
+			</form>
+
+			<div class="form2">
+
+				<form class="section" action="/action_page.php">
+					<label class="label_form2" for="rooms">Room you would like to swap with :</label>
+					<select class="select" id="rooms" name="rooms">
+						<option value="201">201</option>
+						<option value="202">202</option>
+						<option value="203">203</option>
+						<option value="204">204</option>
+						<option value="205">205</option>
+						<option value="206">206</option>
+						<option value="207">207</option>
+					</select>
+				</form>
+				
+				<span class="or">or</span>
+
+				<form  class="section" action="/action_page.php">
+					<label  class="label_form2" for="rooweeksms">Week you want to do your duty on :</label>
+					<select  class="select" id="weeks" name="weeks">
+						<option value="week1">Week 1</option>
+						<option value="week2">Week 2</option>
+						<option value="week3">Week 3</option>
+						<option value="week4">Week 4</option>
+						<option value="week4">Week 5</option>
+						<option value="week4">Week 6</option>
+						<option value="week4">Week 7</option>
+						<option value="week4">Week 8</option>
+					</select>
+				</form>
+
+			</div>
+
+			<button type="submit" class="button">Send request</button>
+</div>
+
+
+	</main>
+
+
+
+
+</body></html>
