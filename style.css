@@ -176,10 +176,25 @@
 .chart_box {
 	background-color: #d9d9d9;
 	width: 350px;
-	height: 350px;
+	height: 370px;
 	margin: auto;
 	margin-bottom: 40px;
+	padding-top: 20px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.chart {
+	width: 280px;
+	display: block;
+	margin: auto;
+}
+
+.tasks_done {
+	font-size: 25px;
+	font-weight: bold;
+	display: block;
+	margin: 25px;
+	text-align: center;
 }
 
 .checkbox {
@@ -286,3 +301,5 @@
 .dot {
 	margin-right: 15px;
 }
+
+/* chart */
